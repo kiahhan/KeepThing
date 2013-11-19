@@ -12,22 +12,26 @@ Copy the Info.plist located at the path named below to e.g. ~/Downloads/:
     /Library/Java/JavaVirtualMachines/jdk.1.7.<…>/Contents/
 
 and then replace
-  
-    <key>JVMCapabilities</key>
-      <array>
-        <string>CommandLine</string>
-      </array>
+
+```xml  
+<key>JVMCapabilities</key>
+  <array>
+    <string>CommandLine</string>
+  </array>
+```
     
 with the following:
 
-    <key>JVMCapabilities</key>
-      <array>
-        <string>JNI</string>
-        <string>BundledApp</string>
-        <string>WebStart</string>
-        <string>Applets</string>
-        <string>CommandLine</string>
-      </array>
+```xml
+<key>JVMCapabilities</key>
+  <array>
+    <string>JNI</string>
+    <string>BundledApp</string>
+    <string>WebStart</string>
+    <string>Applets</string>
+    <string>CommandLine</string>
+  </array>
+```
     
 Afterwards copy the file back to its original location (you need administrator rights). For this change to take effect you need to log out of your account (and back in) or restart your computer. The dialog for Java 6 should shouldn't appear anymore and Eclipse should launch just fine using JRE7. The same holds true for any other application that initially asks for Java, e.g. Adobe's Creative Suite.
 
@@ -37,8 +41,10 @@ you need to change IDEA IntelliJ JVMVersion to 1.7.x in *Info.plist*, to force r
 
 > To edit /Applications/<Product>.app/Contents/Info.plist file, change JVMVersion from 1.6.x to 1.7.x :
 
-    <key>JVMVersion</key>
-    <string>1.7*</string>
+```xml
+<key>JVMVersion</key>
+<string>1.7*</string>
+```
     
 * See this answer for the known problems with JDK 1.7.
 * IDEA_JDK environment variable can be used to override the selected JDK, you may need to run the product from the Terminal so that it sees your environment variables (Mac OS limitation): open -a /Applications/<Product>.app/ .
@@ -52,5 +58,4 @@ http://stackoverflow.com/questions/19563766/eclipse-kepler-for-os-x-mavericks-re
 http://stackoverflow.com/questions/13019199/how-do-i-run-idea-intellij-on-mac-os-x-with-jdk-7
 
 ***
-
 
