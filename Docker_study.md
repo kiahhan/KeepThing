@@ -1,5 +1,6 @@
 ### Study Docker on Ubuntu 13.10
 
+> 以下内容中是根据Yongboy~的[blog](http://www.blogjava.net/yongboy/)内容，经过本人尝试后所写，其中有部分是原帖中没有，而在我尝试过程中遇到的问题，在此提供解决的方法。
 
 [Docker](http://www.docker.io "Docker website")旨在提供一种应用程序的自动化部署解决方案，在 Linux 系统上迅速创建一个容器（轻量级虚拟机）并部署和运行应用程序，并通过配置文件可以轻松实现应用程序的自动化安装、部署和升级，非常方便。因为使用了容器，所以可以很方便的把生产环境和开发环境分开，互不影响，这是 docker 最普遍的一个玩法。更多的玩法还有大规模 web 应用、数据库部署、持续部署、集群、测试环境、面向服务的云计算、虚拟桌面 VDI 等等。
 
@@ -185,12 +186,15 @@ bin/startup.sh
 ```bash
 curl http://192.168.190.131
 ```
-当然，你也可以使用浏览器访问啦。
+可以使用浏览器访问啦。
 
-真实情况，可能不会让tomcat直接对外开放80端口，一般都会位于nginx/apache或者防火墙的后面，上面仅为演示。
 
-小结
 
-在Docker帮助下搭建一个Tomcat运行时环境，总体很简单，让我们看到了PAAS的身影。不错，使用Docker作为PAAS底层服务，本身就不复杂。 下面有时间，会谈一谈如何使用脚本文件构建一个镜像实例，同时会谈一谈Docker的实现原理和机制等。
+###Reference:
++ [Docker学习笔记之一，搭建一个JAVA Tomcat运行环境](http://www.blogjava.net/yongboy/archive/2013/12/12/407498.html)
++ [Docker学习笔记之二，基于Dockerfile搭建JAVA Tomcat运行环境](http://www.blogjava.net/yongboy/archive/2013/12/16/407643.html)
++ [Docker学习笔记之三，有关状态的记录](http://www.blogjava.net/yongboy/archive/2013/12/29/408173.html)
++ [Docker学习笔记之四，构建一个Redis as a Service(RAAS)](http://www.blogjava.net/yongboy/archive/2013/12/31/408297.html)
++ [Deploy Java Apps With Docker = Awesome](http://blogs.atlassian.com/2013/06/deploy-java-apps-with-docker-awesome/)
 
 
