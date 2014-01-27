@@ -1,4 +1,4 @@
-### Study Docker on Ubuntu 13.10
+### Deploy Docker on Ubuntu 13.10
 
 > 以下内容中是根据Yongboy~的[blog](http://www.blogjava.net/yongboy/)内容，经过本人尝试后所写，其中有部分是原帖中没有，而在我尝试过程中遇到的问题，在此提供解决的方法。
 
