@@ -1,4 +1,4 @@
-Keep Things In Mind 
+Keep something in mind
 =========
 
 ### How do I run Application(Eclipse or IntelliJ) on Mac OS X with JDK 7?
