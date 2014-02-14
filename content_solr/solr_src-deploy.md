@@ -9,16 +9,16 @@
 由于Solr是基于[Ant](http://ant.apache.org/)和[Ivy](https://ant.apache.org/ivy/)做管理的，所以需要安装有Ant和Ivy，这里不做介绍。解压后，在解压后的根目录中执行ant elipse。
 
 Ant 构建开始
-![solr-src-build-start](https://raw.github.com/kiahhan/KeepThing/master/content_solr-src-build/solr-src-build-start.png)
+![solr-src-build-start](https://raw.github.com/kiahhan/KeepThing/master/content_solr/solr-src-build-start.png)
 
 Ant 构建成功
-![solr-src-build-successful](https://raw.github.com/kiahhan/KeepThing/master/content_solr-src-build/solr-src-build-successful.png)
+![solr-src-build-successful](https://raw.github.com/kiahhan/KeepThing/master/content_solr/solr-src-build-successful.png)
 
 ###### 3. 导入工程
 
 打开eclipse，通过File > Import > Existing Projects into Workspace导入到Eclipse中。
 
-![eclipse-package-explorer-4-solr-src.png](https://raw.github.com/kiahhan/KeepThing/master/content_solr-src-build/eclipse-package-explorer-4-solr-src.png)
+![eclipse-package-explorer-4-solr-src.png](https://raw.github.com/kiahhan/KeepThing/master/content_solr/eclipse-package-explorer-4-solr-src.png)
 
 ###### 4. 运行代码
 
@@ -121,4 +121,4 @@ System.setProperty("solr.solr.home", "your/path/of/example/solr");
 
 最后，在浏览器中输入http://localhost:8983/solr 查看Solr Admin页面
 
-![solr-startup-successful](https://raw.github.com/kiahhan/KeepThing/master/content_solr-src-build/solr-startup-successful.png)
+![solr-startup-successful](https://raw.github.com/kiahhan/KeepThing/master/content_solr/solr-startup-successful.png)
